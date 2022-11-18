@@ -1,3 +1,35 @@
-<script src="javascript.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<h1>Let's play rock, paper, scissors!</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS Showdown</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <div class="results"></div>
+    <div class="scoreboard">
+      <div class="humanScore">
+        <h2>00</h2>
+        <p>YOU</p>
+      </div>
+      <div class="robotScore">
+        <h2>00</h2>
+        <p>ROBOT</p>
+      </div>
+    </div>
+    <div id="choices">
+      <div id="choice" class="rock">
+        <button>ROCK</button>
+      </div>
+      <div id="choice" class="paper">
+        <button>PAPER</button>
+      </div>
+      <div id="choice" class="scissors">
+        <button>SCISSORS</button>
+      </div>
+    </div>
+  </body>
+</html>

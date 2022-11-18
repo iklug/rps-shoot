@@ -67,7 +67,7 @@ let myPoints = 0;
 let yourPoints = 0;
 
 for (let i = 0; i < 5; i++){
-let rapidfire = prompt(`Choice ${i + 1} out of 5`)
+// let rapidfire = prompt(`Choice ${i + 1} out of 5`)
 const computerSelection = getComputerChoice();
 console.log(computerSelection);
 let round = playRound(rapidfire, computerSelection);
