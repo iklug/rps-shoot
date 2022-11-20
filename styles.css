@@ -6,6 +6,16 @@
   border: 1px solid white;
   height: 100px;
 }
+
+.results > p {
+  font-size: 1.5em;
+  margin: 30px 100px 10px 100px;
+  color: #3a5781;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3px;
+}
+
 .scoreboard {
   height: 150px;
   width: 350px;
@@ -42,7 +52,7 @@ p {
 }
 #choice {
   flex: 1;
-  border: 1px solid white;
+
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -51,7 +61,19 @@ p {
 button {
   height: 130px;
   width: 140px;
-  border: none;
+  border: 1px solid white;
   color: yellow;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+button:hover {
+  border: 2px solid yellow;
+  transition: 0.1s;
+}
+
+.pushed {
+  font-size: 1.5em;
+  transform: scale(1.05);
+  border-color: yellow;
 }
