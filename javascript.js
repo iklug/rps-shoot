@@ -67,6 +67,9 @@ let computerScore = 1;
 
 const rock = document.querySelector('#rock');
 rock.addEventListener('click', (e) => {
+    if(yourScore === 6 || computerScore === 6) {
+       return;
+    }
     e.target.classList.add('pushed');
     const messageDiv = document.querySelector('.results');
 
@@ -107,6 +110,10 @@ messageDiv.appendChild(message);
 
 const paper = document.querySelector('#paper');
 paper.addEventListener('click', (e) => {
+    if(yourScore === 6 || computerScore === 6) {
+        return;
+     }
+
     e.target.classList.add('pushed');
     const messageDiv = document.querySelector('.results');
 
@@ -147,6 +154,9 @@ messageDiv.appendChild(message);
 
 const scissors = document.querySelector('#scissors');
 scissors.addEventListener('click', (e) => {
+    if(yourScore === 6 || computerScore === 6) {
+        return;
+     }
     e.target.classList.add('pushed');
     const messageDiv = document.querySelector('.results');
 
@@ -220,3 +230,23 @@ const endScisTransition = e => {
 const selectScis = document.querySelector('button#scissors');
 selectScis.addEventListener('transitionend', endScisTransition);
 
+const restartGame = () => {
+
+    const messageDiv = document.querySelector('.results');
+
+    if(document.querySelector('.results>p')){
+        messageDiv.removeChild(document.querySelector('.results>p'));
+    };
+    const message = document.createElement('p');
+    message.textContent = 'Choose one!'
+    
+    messageDiv.appendChild(message);
+    
+const yourPoints = document.querySelector('.points-left');
+yourPoints.textContent = '00';
+const compPoints = document.querySelector('.points-right');
+compPoints.textContent = '00';
+yourScore = 1;
+computerScore = 1;
+
+}

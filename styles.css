@@ -23,6 +23,7 @@
   border-radius: 5px;
   margin: 10px auto;
   display: flex;
+  justify-content: center;
 }
 
 .humanScore {
@@ -49,6 +50,7 @@ p {
 
   margin: 10px auto;
   display: flex;
+  justify-content: center;
 }
 #choice {
   flex: 1;
@@ -76,4 +78,17 @@ button:hover {
   font-size: 1.5em;
   transform: scale(1.05);
   border-color: yellow;
+}
+
+.reset-game {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+button.reset {
+  color: #3a5781;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+  background-color: white;
 }
